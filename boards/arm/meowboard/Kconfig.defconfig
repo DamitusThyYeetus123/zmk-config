@@ -5,7 +5,7 @@
 if BOARD_MEOWBOARD_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "meowboard"
+    default "Meowboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y

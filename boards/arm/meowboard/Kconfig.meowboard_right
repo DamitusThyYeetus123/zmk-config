@@ -2,5 +2,4 @@
 # See https://docs.zephyrproject.org/3.5.0/hardware/porting/board_porting.html#write-kconfig-files
 # for more information.
 config BOARD_MEOWBOARD_RIGHT
-    bool "meowboard right"
     select SOC_RP2350A_M33

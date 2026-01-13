@@ -5,10 +5,7 @@
 
 #include <raspberrypi/rpi_pico/rp2350a.dtsi>
 #include <raspberrypi/rpi_pico/m33.dtsi>
-#include "meowboard_mcu.dtsi"
 #include "meowboard.dtsi"
-#include "meowboard_right-pinctrl.dtsi"
-
 &default_transform {
     // Set this to the number of columns on the left side.
     col-offset = <2>;

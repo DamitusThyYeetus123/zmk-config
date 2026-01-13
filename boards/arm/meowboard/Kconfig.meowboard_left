@@ -3,5 +3,4 @@
 # for more information.
 
 config BOARD_MEOWBOARD_LEFT
-    bool "meowboard left"
     select SOC_RP2350A_M33

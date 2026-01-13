@@ -45,9 +45,15 @@
           ps.patool
           ps.semver
           ps.tqdm
+          ps.grpcio
+          ps.grpcio-tools
+          ps.protobuf
+          ps.types-protobuf
         ];
         extraPackages = [
           nixpkgs.legacyPackages.${system}.dtc
+          nixpkgs.legacyPackages.${system}.protobuf
+          nixpkgs.legacyPackages.${system}.nanopb
         ];
       };
     });

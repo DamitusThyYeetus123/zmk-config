@@ -2,10 +2,8 @@
 # See https://docs.zephyrproject.org/3.5.0/hardware/porting/board_porting.html#write-kconfig-files
 # for more information.
 
-CONFIG_BOARD_MEOWBOARD_RIGHT=y
 
 # Enable ZMK outputs
-# CONFIG_ZMK_BLE=y
 CONFIG_ZMK_USB=y
 CONFIG_BUILD_OUTPUT_HEX=y
 CONFIG_BUILD_OUTPUT_UF2=y

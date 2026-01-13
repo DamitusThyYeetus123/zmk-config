@@ -5,7 +5,6 @@
 
 #include <raspberrypi/rpi_pico/rp2350a.dtsi>
 #include <raspberrypi/rpi_pico/m33.dtsi>
-#include "meowboard_mcu.dtsi"
 #include "meowboard.dtsi"
 
 &kscan {
