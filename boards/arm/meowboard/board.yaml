@@ -1,0 +1,6 @@
+board:
+  name: meowboard 
+  socs:
+  - name: rp2350a
+    variants:
+    - name: zmk
