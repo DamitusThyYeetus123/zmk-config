@@ -19,4 +19,4 @@
 #
 ---
 include:
-  - board: arm/meowboard_zmk
+  - board: meowboard_zmk
