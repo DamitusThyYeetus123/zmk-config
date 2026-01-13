@@ -6,12 +6,20 @@ identifier: meowboard
 name: meowboard
 type: mcu
 arch: arm
+flash: 2048
+ram: 520
 toolchain:
   - zephyr
   - gnuarmemb
 supported:
+  - adc
+  - clock
+  - counter
+  - dma
+  - gpio
+  - hwinfo
+  - i2c
+  - pwm
+  - spi
+  - uart
   - usb_device
-#   - adc
-#   - ble
-#   - pwm
-#   - watchdog

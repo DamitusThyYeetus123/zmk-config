@@ -3,10 +3,8 @@
 // and https://zmk.dev/docs/development/hardware-integration/new-shield for more
 // instructions.
 
-/dts-v1/;
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "meowboard-pinctrl.dtsi"
 #include "meowboard-layouts.dtsi"
 
 / {
