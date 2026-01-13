@@ -22,4 +22,6 @@ include:
   - board: meowboard_left/rp2350a/m33
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: meowboard-left
   - board: meowboard_right/rp2350a/m33
+    artifact-name: meowboard-right
