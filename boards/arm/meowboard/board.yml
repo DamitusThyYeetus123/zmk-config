@@ -2,8 +2,8 @@ boards:
   - name: meowboard_left
     vendor: damii
     socs:
-      - name: rp2350a
+    - name: rp2350a
   - name: meowboard_right
     vendor: damii
     socs:
-      - name: rp2350a 
+    - name: rp2350a 

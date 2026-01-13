@@ -4,12 +4,6 @@
 
 CONFIG_BOARD_MEOWBOARD_RIGHT=y
 
-# Enable GPIO
-CONFIG_GPIO=y
-
-# Use pinctrl
-CONFIG_PINCTRL=y
-
 # Enable ZMK outputs
 # CONFIG_ZMK_BLE=y
 CONFIG_ZMK_USB=y

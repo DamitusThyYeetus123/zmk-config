@@ -7,7 +7,6 @@
 #include <raspberrypi/rpi_pico/m33.dtsi>
 #include "meowboard_mcu.dtsi"
 #include "meowboard.dtsi"
-#include "meowboard_left-pinctrl.dtsi"
 
 &kscan {
     // Replace these comments with the GPIO pins in the matrix for the left side.
