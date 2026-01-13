@@ -19,4 +19,5 @@
 #
 ---
 include:
-  - board: meowboard_left
+  - board: meowboard_left/rp2350a/m33
+  - board: meowboard_right/rp2350a/m33
