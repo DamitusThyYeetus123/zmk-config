@@ -188,7 +188,7 @@ pico_serial: &uart0 {};
                         pinmux = <UART1_TX_P20>;
                 };
                 group2 {
-                        pinmux = <UART_RX_P21>;
+                        pinmux = <UART1_RX_P21>;
                         input-enable;
                 };
         };
