@@ -1,20 +1,69 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    behaviors {
+        gaming_tap_behavior: gaming_tap_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GAMING_TAP_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&none>, <&tog 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "Base";
             bindings = <
-                &kp N1 &kp N2    &kp N3 &kp N4
-                &kp A  &kp B     &kp C  &kp D
+&none    &kp N1       &kp N2      &kp N3          &kp N4        &kp N5                  &kp N6  &kp N7        &kp N8           &kp N9      &kp N0       &kp BACKSPACE
+&kp TAB  &kp B        &kp L       &kp D           &kp C         &kp V                   &kp J   &kp Y         &kp O            &kp U       &kp COMMA    &kp ENTER
+&gresc   &mt LCTRL N  &mt LGUI R  &mt LEFT_ALT T  &mt LSHIFT S  &kp G                   &kp P   &mt RSHIFT H  &mt RIGHT_ALT A  &mt RGUI E  &mt RCTRL I  &kp SLASH
+&none    &kp X        &kp Q       &kp M           &kp W         &kp Z                   &kp K   &kp F         &kp SQT          &kp SEMI    &kp DOT      &none
+                      &kp LSHIFT  &kp SPACE       &mo 1         &gaming_tap_behavior    &none   &mo 2         &kp SPACE        &kp RSHIFT
+            >;
+        };
+
+        NAV {
+            bindings = <
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &kp PG_UP  &kp END   &kp UP    &kp HOME   &trans    &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
+&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans    &trans    &trans     &trans     &trans
+                   &trans    &trans    &trans     &trans    &trans  &trans    &trans    &trans
+            >;
+        };
+
+        SYM {
+            bindings = <
+&trans  &trans       &trans      &kp LT                &kp GT                 &trans       &trans    &trans     &trans     &trans     &trans      &trans
+&trans  &kp EXCL     &kp AT      &kp LBKT              &kp RBKT               &kp PIPE     &trans    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL   &kp PLUS
+&trans  &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &trans    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DOT  &kp SLASH
+&trans  &kp PERCENT  &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE    &kp AMPS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0   &kp BACKSLASH
+                     &trans      &trans                &trans                 &trans       &trans    &trans     &trans     &trans
+            >;
+        };
+
+        GAMING {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans   &trans    &trans
+&trans  &kp Q   &kp W   &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
+            >;
+        };
+
+        GAMING_ALT {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
 };
+
