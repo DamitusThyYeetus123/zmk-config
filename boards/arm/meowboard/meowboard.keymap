@@ -9,12 +9,14 @@
             #binding-cells = <0>;
             bindings = <&none>, <&tog 3>;
         };
+
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
+
             display-name = "Mod-Tap";
         };
     };
@@ -25,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none    &kp N1       &kp N2      &kp N3          &kp N4        &kp N5                  &kp N6  &kp N7        &kp N8           &kp N9      &kp N0       &kp BACKSPACE
-&kp TAB  &kp B        &kp L       &kp D           &kp C         &kp V                   &kp J   &kp Y         &kp O            &kp U       &kp COMMA    &kp ENTER
-&gresc   &mt LCTRL N  &mt LGUI R  &mt LEFT_ALT T  &mt LSHIFT S  &kp G                   &kp P   &mt RSHIFT H  &mt RIGHT_ALT A  &mt RGUI E  &mt RCTRL I  &kp SLASH
-&none    &kp X        &kp Q       &kp M           &kp W         &kp Z                   &kp K   &kp F         &kp SQT          &kp SEMI    &kp DOT      &none
-                      &kp LSHIFT  &kp SPACE       &mo 1         &gaming_tap_behavior    &none   &mo 2         &kp SPACE        &kp RSHIFT
+&none       &kp N1       &kp N2      &kp N3          &kp N4        &kp N5                  &kp N6  &kp N7        &kp N8           &kp N9      &kp N0       &kp BACKSPACE
+&kp TAB     &kp B        &kp L       &kp D           &kp C         &kp V                   &kp J   &kp Y         &kp O            &kp U       &kp COMMA    &kp ENTER
+&gresc      &mt LCTRL N  &mt LGUI R  &mt LEFT_ALT T  &mt LSHIFT S  &kp G                   &kp P   &mt RSHIFT H  &mt RIGHT_ALT A  &mt RGUI E  &mt RCTRL I  &kp SLASH
+&kp DELETE  &kp X        &kp Q       &kp M           &kp W         &kp Z                   &kp K   &kp F         &kp SQT          &kp SEMI    &kp DOT      &kp MINUS
+                         &kp LSHIFT  &kp SPACE       &mo 1         &gaming_tap_behavior    &none   &mo 2         &kp SPACE        &kp RSHIFT
             >;
         };
 
@@ -45,11 +47,11 @@
 
         SYM {
             bindings = <
-&trans  &trans       &trans      &kp LT                &kp GT                 &trans       &trans    &trans     &trans     &trans     &trans      &trans
-&trans  &kp EXCL     &kp AT      &kp LBKT              &kp RBKT               &kp PIPE     &trans    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL   &kp PLUS
-&trans  &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &trans    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DOT  &kp SLASH
-&trans  &kp PERCENT  &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE    &kp AMPS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0   &kp BACKSLASH
-                     &trans      &trans                &trans                 &trans       &trans    &trans     &trans     &trans
+&trans  &trans       &trans      &kp LT                &kp GT                 &trans       &trans     &trans     &trans     &trans     &trans      &trans
+&trans  &kp EXCL     &kp AT      &kp LBKT              &kp RBKT               &kp PIPE     &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL   &kp PLUS
+&trans  &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DOT  &kp SLASH
+&trans  &kp PERCENT  &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE    &kp AMPS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0   &kp BACKSLASH
+                     &trans      &trans                &trans                 &trans       &trans     &trans     &trans     &trans
             >;
         };
 
