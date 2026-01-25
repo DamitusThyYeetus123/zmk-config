@@ -16,7 +16,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
-
+            retro-tap;
             display-name = "Mod-Tap";
         };
     };
