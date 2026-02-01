@@ -82,11 +82,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,11) RC(3,10) RC(3,9) RC(3,
 	aliases {
 		watchdog0 = &wdt0;
 	};
-        EXT_POWER {
-                compatible = "zmk,ext-power-generic";
-                control-gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>; /* WS2812_CE */
-                init-delay-ms = <100>;
-        };
+
 };
 
 &flash0 {
