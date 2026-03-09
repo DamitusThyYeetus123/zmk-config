@@ -1,6 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/rgb.h>
 / {
     behaviors {
         gaming_tap_behavior: gaming_tap_behavior {
@@ -27,7 +27,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none       &kp N1       &kp N2      &kp N3          &kp N4        &kp N5                  &kp N6  &kp N7        &kp N8           &kp N9      &kp N0       &kp BACKSPACE
+&rgb_ug RGB_TOG       &kp N1       &kp N2      &kp N3          &kp N4        &kp N5                  &kp N6  &kp N7        &kp N8           &kp N9      &kp N0       &kp BACKSPACE
 &kp TAB     &kp B        &kp L       &kp D           &kp C         &kp V                   &kp J   &kp Y         &kp O            &kp U       &kp COMMA    &kp ENTER
 &gresc      &mt LCTRL N  &mt LGUI R  &mt LEFT_ALT T  &mt LSHIFT S  &kp G                   &kp P   &mt RSHIFT H  &mt RIGHT_ALT A  &mt RGUI E  &mt RCTRL I  &kp SLASH
 &kp DELETE  &kp X        &kp Q       &kp M           &kp W         &kp Z                   &kp K   &kp F         &kp SQT          &kp SEMI    &kp DOT      &kp MINUS
