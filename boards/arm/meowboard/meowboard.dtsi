@@ -71,7 +71,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,11) RC(3,10) RC(3,9) RC(3,
 	chosen {
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
-                // zephyr,flash-controller = &qmi;
+                zephyr,flash-controller = &qmi;
 		zephyr,code-partition = &code_partition;
                 zmk,physical-layout = &default_layout;
                 zmk,underglow = &ws2812;
@@ -111,15 +111,15 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,11) RC(3,10) RC(3,9) RC(3,
 		 */
 		code_partition: partition@100 {
 			label = "code-partition";
-			reg = <0x100 (DT_SIZE_M(2) - 0x100)>;
+			reg = <0x100 (DT_SIZE_M(2) - 0x100 - DT_SIZE_K(512))>;
 			read-only;
 		};
-                /*
+                
                 storage_partition: partition@180000 {
                     reg = <0x180000 DT_SIZE_K(512)>;
                     read-only;
                 };
-                */
+                
 	};
 };
 
